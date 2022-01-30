@@ -25,7 +25,8 @@ copia.close()
 original.close()
 
 os.system('rm practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
-os.system('sudo mv practica_creativa2/bookinfo/src/productpage/templates/pp2.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
+#os.system('sudo mv practica_creativa2/bookinfo/src/productpage/templates/pp2.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
+os.system('mv practica_creativa2/bookinfo/src/productpage/templates/pp2.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
 
 #SELECCION DE PUERTO 9080
 os.system('python3 practica_creativa2/bookinfo/src/productpage/productpage_monolith.py 9080')
