@@ -7,10 +7,8 @@ os.system('git clone https://github.com/CDPS-ETSIT/practica_creativa2.git')
 
 os.system('pip3 install -r practica_creativa2/bookinfo/src/productpage/requirements.txt')
 
-#export GROUP_NUMBER=48
 GROUP_NUMBER = os.environ['GROUP_NUMBER']
 
-#MODIFICAR EL TÍTULO
 os.system('cp practica_creativa2/bookinfo/src/productpage/templates/productpage.html practica_creativa2/bookinfo/src/productpage/templates/pp2.html')
 
 original = open('practica_creativa2/bookinfo/src/productpage/templates/productpage.html', 'r')
@@ -25,8 +23,6 @@ copia.close()
 original.close()
 
 os.system('rm practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
-#os.system('sudo mv practica_creativa2/bookinfo/src/productpage/templates/pp2.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
 os.system('mv practica_creativa2/bookinfo/src/productpage/templates/pp2.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html')
 
-#SELECCION DE PUERTO 9080
 os.system('python3 practica_creativa2/bookinfo/src/productpage/productpage_monolith.py 9080')
