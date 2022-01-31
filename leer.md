@@ -1,4 +1,4 @@
-#Necesito cambiar los permisos de run.sh para poder ejecutarlo
+#Hay que cambiar los permisos de run.sh para poder ejecutarlo
 chmod u+x run.sh
 
 #Comando para correrlo
